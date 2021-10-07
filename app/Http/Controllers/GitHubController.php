@@ -15,8 +15,6 @@ class GitHubController extends Controller
         $name=$user->getNickname();
         $token=$user->token;
 
-        var_dump($token);
-
         $authorization = "Authorization: Bearer ".$token;
 
         $curl = curl_init();
